@@ -1,591 +1,323 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Lucas Jacob - Développeur Web Full-Stack | Portfolio</title>
-    
-    <meta name="description" content="Portfolio de Lucas Jacob, développeur web full-stack passionné. Découvrez mes projets en PHP, JavaScript, Python et mes compétences en développement web moderne.">
-    <meta name="keywords" content="développeur web, full-stack, PHP, JavaScript, Python, React, MySQL, portfolio, Lucas Jacob, EPITECH">
-    <meta name="author" content="Lucas Jacob">
-    
-    <meta property="og:title" content="Lucas Jacob - Développeur Web Full-Stack">
-    <meta property="og:description" content="Portfolio de développeur web passionné spécialisé en PHP, JavaScript et Python">
-    <meta property="og:type" content="website">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lucas Jacob - Développeur Web Full-Stack">
-    <meta name="twitter:description" content="Portfolio de développeur web passionné">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Lucas Jacob - Développeur Web Full-Stack orienté Data, étudiant en Master à Epitech"
+    />
+    <title>Lucas Jacob - Développeur Web Full-Stack</title>
 
+    <!-- Preconnect pour optimiser le chargement -->
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav id="navbar">
-        <div class="container nav-container">
-            <div class="logo">LJ</div>
-            <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills-analysis">Compétences</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#github-projects">GitHub</a></li>
-                <li><a href="#last-projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="container nav-container">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <header>
-        <h1 id="typing-text"></h1>
-        <p>Développeur Web Full-Stack</p>
-        <div class="cv-buttons">
-            <a href="assets/documents/CV_2025-09-04_Lucas_Jacob.pdf" download="CV_Lucas_Jacob.pdf" class="cv-button cv-download">
-                <span>Télécharger mon CV</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-            </a>
-            <button id="viewCvBtn" class="cv-button cv-view">
-                <span>Voir mon CV</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
+    <!-- Ajout de la balise main pour l'accessibilité -->
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content fade-in">
+          <h1 id="typing-text"></h1>
+          <p class="subtitle">Développeur Web Full-Stack</p>
+          <div class="cta-buttons">
+            <a
+              href="assets/documents/CV_2025-09-04_Lucas_Jacob.pdf"
+              download
+              class="btn btn-primary"
+              >Télécharger mon CV</a
+            >
+            <button id="viewCvBtn" class="btn btn-secondary">
+              Voir mon CV
             </button>
+          </div>
         </div>
-    </header>
+      </section>
 
-    <section id="about">
+      <section id="about" class="about">
         <div class="container">
-            <h2>À propos</h2>
-            
-            <div class="about-grid">
-                <div class="about-card fade-in">
-                    <h3>Mon Parcours</h3>
-                    <p>
-                        Actuellement étudiant à <strong>EPITECH</strong>, je me forme au développement informatique 
-                        depuis maintenant <strong>1 an et demi</strong>. Passionné par la création de solutions web 
-                        innovantes, j'ai rapidement développé des compétences solides en développement front-end et back-end.
-                    </p>
-                    <p>
-                        Mon parcours m'a permis de maîtriser plusieurs langages et technologies, et de réaliser 
-                        des projets concrets qui démontrent ma capacité à transformer des idées en applications fonctionnelles.
-                    </p>
-                    <p>
-                        <strong>Objectif professionnel :</strong> Devenir développeur full-stack confirmé et contribuer 
-                        à des projets innovants dans une équipe dynamique.
-                    </p>
-                </div>
-
-                <div class="about-card profile-card fade-in">
-                    <h3>Profile</h3>
-                    <img src="assets/images/profile.png" alt="Lucas Jacob - Développeur Web Full-Stack" class="profile-img">
-                    <p>
-                        <strong>Lucas JACOB</strong><br>
-                        Développeur Full-Stack<br>
-                        Étudiant EPITECH<br>
-                        Passionné par les nouvelles technologies
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/alterax-code" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="https://www.linkedin.com/in/jcb-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </div>
-                </div>
-
-                <div class="about-card fade-in">
-                    <h3>Compétences Techniques</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Technologie</th>
-                                <th>Niveau</th>
-                                <th>Expérience</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HTML/CSS</td>
-                                <td>Avancé</td>
-                                <td>1.5 ans</td>
-                            </tr>
-                            <tr>
-                                <td>JavaScript</td>
-                                <td>Intermédiaire+</td>
-                                <td>1 an</td>
-                            </tr>
-                            <tr>
-                                <td>PHP</td>
-                                <td>Intermédiaire</td>
-                                <td>8 mois</td>
-                            </tr>
-                            <tr>
-                                <td>MySQL</td>
-                                <td>Intermédiaire</td>
-                                <td>8 mois</td>
-                            </tr>
-                            <tr>
-                                <td>Python</td>
-                                <td>Intermédiaire</td>
-                                <td>6 mois</td>
-                            </tr>
-                            <tr>
-                                <td>React</td>
-                                <td>Débutant</td>
-                                <td>3 mois</td>
-                            </tr>
-                            <tr>
-                                <td>Git</td>
-                                <td>Intermédiaire</td>
-                                <td>1 an</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+          <h2 class="fade-in">À propos de moi</h2>
+          <div class="about-content fade-in">
+            <!-- Image optimisée avec loading lazy et dimension fixe -->
+            <img
+              src="assets/images/profile.png"
+              alt="Lucas Jacob - Développeur Web Full-Stack"
+              class="profile-img"
+              width="250"
+              height="250"
+              loading="lazy"
+            />
+            <div class="about-text">
+              <h3>Étudiant en Master Data à EPITECH</h3>
+              <p>
+                Passionné par le développement informatique et l'intelligence
+                artificielle, je dispose d'une première expérience en
+                programmation que je souhaite consolider à travers le Master en
+                Data à Epitech.
+              </p>
+              <p>
+                Curieux et motivé, je suis déterminé à contribuer à des projets
+                innovants tout en développant mes compétences techniques et
+                analytiques.
+              </p>
+              <div class="contact-info">
+                <p>📧 lucas.jacob9554@gmail.com</p>
+                <p>📱 0769717189</p>
+                <p>📍 Val d'Oise, Île-de-France</p>
+                <p>
+                  💼
+                  <a
+                    href="https://www.linkedin.com/in/jcb-dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                  |
+                  <a
+                    href="https://github.com/alterax-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="skills-analysis">
+      </section>
+
+      <section id="skills" class="skills">
         <div class="container">
-            <h2>Analyse de mes Compétences</h2>
-            <p class="section-intro">
-                Voici une analyse détaillée de mes réalisations et de ma progression dans le développement de mes compétences techniques.
-            </p>
-
-            <div class="skill-analysis fade-in">
-                <h3>Développement Web Front-End</h3>
-                <div class="skill-level">Niveau : Avancé</div>
-                
-                <h4>Compétences acquises</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li><strong>HTML5 / CSS3</strong> : Maîtrise des standards modernes, sémantique HTML, Flexbox, Grid, animations CSS</li>
-                        <li><strong>JavaScript</strong> : Manipulation du DOM, événements, fetch API, async/await, ES6+</li>
-                        <li><strong>Responsive Design</strong> : Mobile-first, media queries, adaptation multi-écrans</li>
-                        <li><strong>Accessibilité</strong> : ARIA, structure sémantique, navigation clavier</li>
-                    </ul>
+          <h2 class="fade-in">Analyse des Compétences</h2>
+          <div class="skills-grid fade-in">
+            <div class="skill-category">
+              <h3>Langages</h3>
+              <div class="skill-item">
+                <span>HTML/CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
                 </div>
-
-                <h4>Réalisations concrètes</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li>Création de ce portfolio avec animations, modal, scroll fluide et système de likes interactif</li>
-                        <li>Interface responsive testée sur mobile, tablette et desktop</li>
-                        <li>Implémentation d'un carrousel de projets GitHub dynamique</li>
-                    </ul>
+              </div>
+              <div class="skill-item">
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
                 </div>
-
-                <h4>Progression</h4>
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;">85%</div>
-                    </div>
+              </div>
+              <div class="skill-item">
+                <span>PHP</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
                 </div>
-                <p class="progress-note">
-                    J'ai progressé de débutant à avancé en 1.5 ans. Mes prochains objectifs : maîtriser React et TypeScript.
-                </p>
+              </div>
+              <div class="skill-item">
+                <span>SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
             </div>
 
-            <div class="skill-analysis fade-in">
-                <h3>Développement Back-End</h3>
-                <div class="skill-level">Niveau : Intermédiaire</div>
-                
-                <h4>Compétences acquises</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li><strong>PHP</strong> : POO, gestion de sessions, cookies, manipulation de fichiers JSON</li>
-                        <li><strong>MySQL</strong> : Conception de bases de données, requêtes SQL, jointures, CRUD</li>
-                        <li><strong>API RESTful</strong> : Création d'endpoints, gestion des requêtes HTTP, réponses JSON</li>
-                        <li><strong>Sécurité</strong> : Validation des données, prévention injections SQL, authentification</li>
-                    </ul>
+            <div class="skill-category">
+              <h3>Frameworks</h3>
+              <div class="skill-item">
+                <span>React.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 65%"></div>
                 </div>
-
-                <h4>Réalisations concrètes</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li>Site de recettes avec authentification complète et base de données MySQL</li>
-                        <li>Système de likes avec API PHP, stockage JSON et protection par cookies</li>
-                        <li>CRUD complet : création, lecture, modification, suppression de données</li>
-                        <li>Upload et gestion d'images côté serveur</li>
-                    </ul>
+              </div>
+              <div class="skill-item">
+                <span>Symfony</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 60%"></div>
                 </div>
-
-                <h4>Progression</h4>
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%;">70%</div>
-                    </div>
-                </div>
-                <p class="progress-note">
-                    Passé de bases théoriques à des applications fonctionnelles en 8 mois. Objectif : approfondir Node.js et les architectures MVC.
-                </p>
+              </div>
             </div>
 
-            <div class="skill-analysis fade-in">
-                <h3>Programmation Python & Game Development</h3>
-                <div class="skill-level">Niveau : Intermédiaire</div>
-                
-                <h4>Compétences acquises</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li><strong>Python</strong> : Syntaxe, structures de données, POO, gestion d'erreurs</li>
-                        <li><strong>Pygame</strong> : Boucle de jeu, sprites, collisions, gestion des événements</li>
-                        <li><strong>Unreal Engine</strong> : Blueprints, level design, inputs joueur, caméras 3D</li>
-                        <li><strong>Logique algorithmique</strong> : Optimisation, résolution de problèmes</li>
-                    </ul>
+            <div class="skill-category">
+              <h3>Base de données</h3>
+              <div class="skill-item">
+                <span>MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
                 </div>
-
-                <h4>Réalisations concrètes</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li>Jeu du pendu en Pygame avec interface graphique et système de score</li>
-                        <li>Projet 3D dans Unreal Engine avec interactions et environnements</li>
-                        <li>Gestion de collisions et animations de sprites</li>
-                    </ul>
+              </div>
+              <div class="skill-item">
+                <span>MongoDB</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 50%"></div>
                 </div>
-
-                <h4>Progression</h4>
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 65%;">65%</div>
-                    </div>
-                </div>
-                <p class="progress-note">
-                    Découverte du game dev il y a 6 mois. Objectif : approfondir l'IA de jeu et les systèmes complexes.
-                </p>
+              </div>
             </div>
 
-            <div class="skill-analysis fade-in">
-                <h3>Outils & Méthodes</h3>
-                <div class="skill-level">Niveau : Intermédiaire</div>
-                
-                <h4>Compétences acquises</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li><strong>Git & GitHub</strong> : Versioning, branches, commits, pull requests, collaboration</li>
-                        <li><strong>VS Code</strong> : Extensions, debugging, raccourcis, productivité</li>
-                        <li><strong>Méthode agile</strong> : Sprints, itérations, user stories (EPITECH)</li>
-                        <li><strong>Documentation</strong> : README, commentaires de code, markdown</li>
-                    </ul>
+            <div class="skill-category">
+              <h3>Outils</h3>
+              <div class="skill-item">
+                <span>Git/GitHub</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
                 </div>
-
-                <h4>Réalisations concrètes</h4>
-                <div class="skill-block">
-                    <ul>
-                        <li>Tous mes projets sont versionnés sur GitHub avec historique propre</li>
-                        <li>Documentation complète de chaque projet</li>
-                        <li>Travail en équipe sur des projets collaboratifs à EPITECH</li>
-                    </ul>
+              </div>
+              <div class="skill-item">
+                <span>VS Code</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
                 </div>
-
-                <h4>Progression</h4>
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%;">75%</div>
-                    </div>
-                </div>
-                <p class="progress-note">
-                    Utilisation quotidienne depuis 1 an. Objectif : maîtriser GitHub Actions et CI/CD.
-                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="skills-summary fade-in">
-                <h3>Synthèse de ma Progression</h3>
-                <div class="summary-grid">
-                    <div class="summary-card">
-                        <h4>Début 2024</h4>
-                        <p>Découverte du développement web avec HTML/CSS</p>
-                    </div>
-                    <div class="summary-card">
-                        <h4>Mi-2024</h4>
-                        <p>Premier projet full-stack avec PHP et MySQL</p>
-                    </div>
-                    <div class="summary-card">
-                        <h4>Fin 2024</h4>
-                        <p>Maîtrise du front-end et découverte du game dev</p>
-                    </div>
-                    <div class="summary-card">
-                        <h4>Aujourd'hui</h4>
-                        <p>Développeur full-stack capable de mener des projets complets</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-<div class="project-card-detailed fade-in" data-project-id="site-recettes">
-    <img src="assets/images/recettes.png" alt="Site de recettes de cuisine">
-    
-    <div class="project-content">
-        <h3>Site de recettes de cuisine</h3>
-        
-
-        <div class="like-section">
-            <button class="like-button" data-project="site-recettes">
-                <svg class="heart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg>
-                <span class="like-count">0</span> J'aime
-            </button>
-        </div>
-        
-        <p class="project-description">
-            Application web complète permettant de créer, partager et découvrir 
-            des recettes de cuisine. Système d'authentification, CRUD complet 
-            et interface responsive.
-        </p>
-        
-        <div class="project-section">
-            <h4>🛠 Technologies utilisées :</h4>
-            <div class="tech-tags">
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-            </div>
-        </div>
-        
-        <div class="project-section">
-            <h4>Compétences développées :</h4>
-            <ul>
-                <li>Base de données relationnelle (tables utilisateurs et recettes)</li>
-                <li>Authentification et gestion de sessions</li>
-                <li>CRUD complet (ajout, modification, suppression de recettes)</li>
-                <li>Upload et gestion d'images</li>
-                <li>Design responsive mobile-first</li>
-            </ul>
-        </div>
-        
-        <div class="project-section">
-            <h4>Défis surmontés :</h4>
-            <p>
-                Sécurisation des formulaires contre les injections SQL, 
-                gestion du redimensionnement d'images uploadées, 
-                création d'une interface intuitive.
-            </p>
-        </div>
-        
-        <div class="project-section">
-            <h4>Ce que j'ai appris :</h4>
-            <p>
-                J'ai découvert l'importance de la validation des données côté serveur, 
-                la structuration d'une base de données et la gestion de l'état utilisateur.
-            </p>
-        </div>
-        
-        <div class="project-links">
-            <a href="https://github.com/alterax-code/recettes" target="_blank" class="project-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                Code source
-            </a>
-        </div>
-        
-        <div class="project-date">
-            <small>Réalisé en : Septembre 2024</small>
-        </div>
-    </div>
-</div>
-
-<div class="project-card-detailed fade-in" data-project-id="jeu-pygame">
-    <img src="assets/images/pygame.png" alt="Jeu développé avec Python et Pygame">
-    
-    <div class="project-content">
-        <h3>Jeu Python avec Pygame</h3>
-        
-
-        <div class="like-section">
-            <button class="like-button" data-project="jeu-pygame">
-                <svg class="heart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg>
-                <span class="like-count">0</span> J'aime
-            </button>
-        </div>
-        
-        <p class="project-description">
-            Jeu vidéo 2D développé en Python avec la librairie Pygame. 
-            Projet d'étude pour apprendre les bases de la programmation 
-            et de la logique de jeu.
-        </p>
-        
-        <div class="project-section">
-            <h4>🛠 Technologies utilisées :</h4>
-            <div class="tech-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Pygame</span>
-            </div>
-        </div>
-        
-        <div class="project-section">
-            <h4>Compétences développées :</h4>
-            <ul>
-                <li>Logique de programmation avec Python</li>
-                <li>Boucle de jeu et gestion d'événements</li>
-                <li>Gestion de sprites et animations</li>
-                <li>Détection de collisions</li>
-                <li>Interface graphique simple</li>
-            </ul>
-        </div>
-        
-        <div class="project-section">
-            <h4>Défis surmontés :</h4>
-            <p>
-                Comprendre la boucle de jeu infinie, gérer les FPS, 
-                optimiser les collisions pour éviter les ralentissements.
-            </p>
-        </div>
-        
-        <div class="project-section">
-            <h4>Ce que j'ai appris :</h4>
-            <p>
-                Python est un langage polyvalent qui va au-delà du web. 
-                J'ai découvert la logique de programmation orientée jeu vidéo.
-            </p>
-        </div>
-        
-        <div class="project-links">
-            <a href="https://github.com/alterax-code/pygame-project" target="_blank" class="project-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                Code source
-            </a>
-        </div>
-        
-        <div class="project-date">
-            <small>Réalisé en : Octobre 2024</small>
-        </div>
-    </div>
-</div>
-
-<div class="project-card-detailed fade-in" data-project-id="jeu-unreal">
-    <img src="assets/images/unreal.png" alt="Jeu développé avec Unreal Engine">
-    
-    <div class="project-content">
-        <h3>Jeu Unreal Engine</h3>
-        
-        <div class="like-section">
-            <button class="like-button" data-project="jeu-unreal">
-                <svg class="heart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg>
-                <span class="like-count">0</span> J'aime
-            </button>
-        </div>
-        
-        <p class="project-description">
-            Projet de jeu 3D développé avec Unreal Engine. 
-            Expérimentation avec la création de jeux 3D, 
-            les blueprints et le level design.
-        </p>
-        
-        <div class="project-section">
-            <h4>🛠 Technologies utilisées :</h4>
-            <div class="tech-tags">
-                <span class="tech-tag">Unreal Engine</span>
-                <span class="tech-tag">Blueprints</span>
-                <span class="tech-tag">C++</span>
-            </div>
-        </div>
-        
-        <div class="project-section">
-            <h4>Compétences développées :</h4>
-            <ul>
-                <li>Découverte d'un moteur de jeu professionnel</li>
-                <li>Programmation visuelle avec Blueprints</li>
-                <li>Création de niveaux et environnements 3D</li>
-                <li>Gestion de caméras et inputs joueur</li>
-                <li>Initiation au C++ pour le gaming</li>
-            </ul>
-        </div>
-        
-        <div class="project-section">
-            <h4>Défis surmontés :</h4>
-            <p>
-                Prise en main d'un outil complexe, comprendre la logique 
-                des blueprints, optimiser les performances 3D.
-            </p>
-        </div>
-        
-        <div class="project-section">
-            <h4>Ce que j'ai appris :</h4>
-            <p>
-                Le développement de jeux 3D nécessite une approche différente. 
-                Unreal Engine est un outil puissant mais demande du temps pour maîtriser.
-            </p>
-        </div>
-        
-        <div class="project-links">
-            <a href="https://github.com/alterax-code/unreal-project" target="_blank" class="project-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                Code source
-            </a>
-        </div>
-        
-        <div class="project-date">
-            <small>Réalisé en : Novembre 2024</small>
-        </div>
-    </div>
-</div>
-
-    <section id="contact">
+      <section id="projects" class="projects">
         <div class="container">
-            <h2>Contact</h2>
-            
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="lastname">Nom</label>
-                    <input type="text" id="lastname" name="lastname" required>
+          <h2 class="fade-in">Mes Projets</h2>
+          <div class="projects-grid fade-in">
+            <div class="project-card">
+              <!-- Images optimisées avec loading lazy -->
+              <img
+                src="assets/images/recettes.png"
+                alt="Site de recettes TasteUp"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <div class="project-info">
+                <h3>Site de Recettes</h3>
+                <p>
+                  Application web de gestion de recettes avec planification de
+                  repas
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Symfony</span>
                 </div>
+                <button class="like-button" data-project="site-recettes">
+                  <span class="heart-icon">❤️</span>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="firstname">Prénom</label>
-                    <input type="text" id="firstname" name="firstname" required>
+            <div class="project-card">
+              <img
+                src="assets/images/pygame.png"
+                alt="Jeu Pendu Deluxe en Python"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <div class="project-info">
+                <h3>Jeu Python - Pendu Deluxe</h3>
+                <p>
+                  Jeu du pendu avec interface graphique développé en Python avec
+                  Pygame
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pygame</span>
                 </div>
+                <button class="like-button" data-project="jeu-pygame">
+                  <span class="heart-icon">❤️</span>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+            <div class="project-card">
+              <img
+                src="assets/images/unreal.png"
+                alt="Projet Unreal Engine"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <div class="project-info">
+                <h3>Projet Unreal Engine</h3>
+                <p>Développement de jeu vidéo avec Unreal Engine</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Unreal Engine</span>
+                  <span class="tech-tag">C++</span>
                 </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <button type="submit">Envoyer le message</button>
-            </form>
+                <button class="like-button" data-project="jeu-unreal">
+                  <span class="heart-icon">❤️</span>
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="fade-in">Contact</h2>
+          <div class="contact-content fade-in">
+            <p>
+              N'hésitez pas à me contacter pour discuter de vos projets ou
+              opportunités !
+            </p>
+            <div class="contact-methods">
+              <a href="mailto:lucas.jacob9554@gmail.com" class="contact-link"
+                >📧 Email</a
+              >
+              <a
+                href="https://www.linkedin.com/in/jcb-dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+                >💼 LinkedIn</a
+              >
+              <a
+                href="https://github.com/alterax-code"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
+      <div class="container">
         <p>&copy; 2025 Lucas Jacob - Tous droits réservés</p>
+      </div>
     </footer>
 
+    <!-- Modal CV avec image prioritaire -->
     <div id="cvModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <img src="assets/images/CV_2025-09-04_Lucas_Jacob_page-0001.jpg" alt="CV Lucas Jacob" class="cv-image">
-            <a href="assets/documents/CV_2025-09-04_Lucas_Jacob.pdf" download="CV_Lucas_Jacob.pdf" class="modal-download-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                Télécharger
-            </a>
-        </div>
+      <span class="close-modal">&times;</span>
+      <img
+        class="modal-content"
+        id="cvImage"
+        src="assets/images/CV_2025-09-04_Lucas_Jacob.jpg"
+        alt="CV de Lucas Jacob"
+        fetchpriority="high"
+        width="1240"
+        height="1754"
+      />
     </div>
 
     <script src="script.js"></script>
-    <script src="likes.js"></script>  
-
-</body>
+    <script src="likes.js"></script>
+  </body>
 </html>
