@@ -1115,6 +1115,26 @@ section h2 {
   color: var(--text-light);
 }
 
+
+/* ===== LANG TOGGLE ===== */
+#lang-toggle {
+  background: transparent;
+  border: 1px solid var(--primary-red);
+  color: var(--primary-red);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-left: 16px;
+}
+
+#lang-toggle:hover {
+  background: var(--primary-red);
+  color: #fff;
+}
+
 .about-card:hover,
 .skill-analysis:hover,
 .project-card-detailed:hover {

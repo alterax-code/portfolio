@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Lucas Jacob — Développeur Full Stack & Data Science | Portfolio</title>
+    <title>Lucas Jacob — Développeur Full Stack &amp; Data Science | Portfolio</title>
 
     <meta
       name="description"
-      content="Portfolio de Lucas Jacob, développeur Full Stack & Data Science. MSc Data Science — EPITECH Paris (promo 2028). Projets en Rust, Java, Python, React. Recherche alternance full stack / data engineering / IA."
+      content="Portfolio de Lucas Jacob, développeur Full Stack &amp; Data Science. MSc Data Science — EPITECH Paris (promo 2028). Projets en Rust, Java, Python, React. Recherche alternance full stack / data engineering / IA."
     />
     <meta
       name="keywords"
@@ -16,26 +16,14 @@
     />
     <meta name="author" content="Lucas Jacob" />
 
-    <meta
-      property="og:title"
-      content="Lucas Jacob — Développeur Full Stack & Data Science"
-    />
-    <meta
-      property="og:description"
-      content="Portfolio de Lucas Jacob — MSc Data Science EPITECH Paris. Projets Rust, Java, Python, React. Recherche alternance full stack / data engineering / IA."
-    />
+    <meta property="og:title" content="Lucas Jacob — Développeur Full Stack &amp; Data Science" />
+    <meta property="og:description" content="Portfolio de Lucas Jacob — MSc Data Science EPITECH Paris. Projets Rust, Java, Python, React. Recherche alternance full stack / data engineering / IA." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lucas-jacob.com" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Lucas Jacob — Développeur Full Stack & Data Science"
-    />
-    <meta
-      name="twitter:description"
-      content="MSc Data Science EPITECH Paris. Projets Rust, Java, Python, React. Recherche alternance."
-    />
+    <meta name="twitter:title" content="Lucas Jacob — Développeur Full Stack &amp; Data Science" />
+    <meta name="twitter:description" content="MSc Data Science EPITECH Paris. Projets Rust, Java, Python, React. Recherche alternance." />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -44,17 +32,18 @@
       <div class="container nav-container">
         <div class="logo">LJ</div>
         <ul class="nav-links">
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills-analysis">Compétences</a></li>
-          <li><a href="#last-projects">Projets</a></li>
+          <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+          <li><a href="#skills-analysis" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+          <li><a href="#last-projects" data-fr="Projets" data-en="Projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="lang-toggle" aria-label="Switch language">EN</button>
       </div>
     </nav>
 
     <header>
       <h1 id="typing-text"></h1>
-      <p>Développeur Full Stack & Data Science</p>
+      <p data-fr="Développeur Full Stack &amp; Data Science" data-en="Full Stack Developer &amp; Data Science">Développeur Full Stack &amp; Data Science</p>
       <p>MSc Data Science — EPITECH Paris</p>
       <div class="cv-buttons">
         <a
@@ -62,30 +51,16 @@
           download="CV_Jacob_Lucas.pdf"
           class="cv-button cv-download"
         >
-          <span>Télécharger mon CV</span>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
+          <span data-fr="Télécharger mon CV" data-en="Download my CV">Télécharger mon CV</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
         </a>
         <button id="viewCvBtn" class="cv-button cv-view">
-          <span>Voir mon CV</span>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
+          <span data-fr="Voir mon CV" data-en="View my CV">Voir mon CV</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
             <circle cx="12" cy="12" r="3"></circle>
           </svg>
@@ -95,12 +70,14 @@
 
     <section id="about">
       <div class="container">
-        <h2>À propos</h2>
+        <h2 data-fr="À propos" data-en="About">À propos</h2>
 
         <div class="about-grid">
           <div class="about-card fade-in">
-            <h3>Mon Parcours</h3>
-            <p>
+            <h3 data-fr="Mon Parcours" data-en="My Background">Mon Parcours</h3>
+            <p data-i18n="html"
+               data-fr="Après un parcours atypique passant par différents secteurs, je me suis orienté vers le développement informatique par passion pour la création de solutions techniques. Autodidacte dans un premier temps, j'ai obtenu un <strong>Titre Professionnel Développeur Web et Web Mobile (RNCP niveau 5)</strong> avant d'intégrer <strong>EPITECH Paris</strong> en MSc Data Science (promo 2028)."
+               data-en="After an atypical journey through different sectors, I turned toward software development out of a passion for building technical solutions. Self-taught at first, I obtained a <strong>Professional Title — Web and Mobile Web Developer (RNCP level 5)</strong> before joining <strong>EPITECH Paris</strong> for an MSc in Data Science (class of 2028).">
               Après un parcours atypique passant par différents secteurs, je me
               suis orienté vers le développement informatique par passion pour la
               création de solutions techniques. Autodidacte dans un premier temps,
@@ -108,7 +85,9 @@
               Mobile (RNCP niveau 5)</strong> avant d'intégrer
               <strong>EPITECH Paris</strong> en MSc Data Science (promo 2028).
             </p>
-            <p>
+            <p data-i18n="html"
+               data-fr="Aujourd'hui, je maîtrise un stack technique polyvalent couvrant le développement web full stack (React, Node.js, PHP/Symfony), les langages système (Rust, Java, C++), et la data science (Python, Machine Learning). Je suis actuellement en recherche d'une <strong>alternance</strong> en développement full stack, data engineering ou IA."
+               data-en="Today, I command a versatile technical stack covering full-stack web development (React, Node.js, PHP/Symfony), system languages (Rust, Java, C++), and data science (Python, Machine Learning). I am currently looking for an <strong>apprenticeship</strong> in full-stack development, data engineering, or AI.">
               Aujourd'hui, je maîtrise un stack technique polyvalent couvrant le
               développement web full stack (React, Node.js, PHP/Symfony), les
               langages système (Rust, Java, C++), et la data science (Python,
@@ -116,7 +95,8 @@
               <strong>alternance</strong> en développement full stack, data
               engineering ou IA.
             </p>
-            <p>
+            <p data-fr="Ce qui me distingue : ma capacité à apprendre rapidement, mon parcours de reconversion qui prouve ma détermination, et mes projets personnels ambitieux (création d'un langage de programmation en Rust, jeu 2D complet en Java, application de sécurité Windows)."
+               data-en="What sets me apart: my ability to learn quickly, my career change that proves my determination, and my ambitious personal projects (building a programming language in Rust, a complete 2D game in Java, a Windows security application).">
               Ce qui me distingue : ma capacité à apprendre rapidement, mon
               parcours de reconversion qui prouve ma détermination, et mes projets
               personnels ambitieux (création d'un langage de programmation en Rust,
@@ -125,31 +105,23 @@
           </div>
 
           <div class="about-card profile-card fade-in">
-            <h3>Profil</h3>
+            <h3 data-fr="Profil" data-en="Profile">Profil</h3>
             <img
               src="assets/images/profile.png"
-              alt="Lucas Jacob — Développeur Full Stack & Data Science"
+              alt="Lucas Jacob — Développeur Full Stack &amp; Data Science"
               class="profile-img"
             />
-            <p>
+            <p data-i18n="html"
+               data-fr="<strong>Lucas Jacob</strong><br />Développeur Full Stack &amp; Data Science<br />MSc Data Science — EPITECH Paris<br />Promo 2028"
+               data-en="<strong>Lucas Jacob</strong><br />Full Stack Developer &amp; Data Science<br />MSc Data Science — EPITECH Paris<br />Class of 2028">
               <strong>Lucas Jacob</strong><br />
-              Développeur Full Stack & Data Science<br />
+              Développeur Full Stack &amp; Data Science<br />
               MSc Data Science — EPITECH Paris<br />
               Promo 2028
             </p>
             <div class="social-links">
-              <a
-                href="https://github.com/alterax-code"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
-              <a
-                href="https://www.linkedin.com/in/jcb-dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
+              <a href="https://github.com/alterax-code" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/jcb-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a href="mailto:contact@lucas-jacob.com">Email</a>
             </div>
           </div>
@@ -159,7 +131,7 @@
 
     <section id="skills-analysis">
       <div class="container">
-        <h2>Compétences</h2>
+        <h2 data-fr="Compétences" data-en="Skills">Compétences</h2>
 
         <div class="carousel-container" id="skills-carousel">
           <button class="carousel-arrow carousel-arrow-prev" aria-label="Précédent">&#8249;</button>
@@ -168,8 +140,8 @@
 
               <div class="carousel-card">
                 <div class="skill-analysis">
-                  <h3>Développement Frontend</h3>
-                  <div class="skill-level">Niveau : Avancé</div>
+                  <h3 data-fr="Développement Frontend" data-en="Frontend Development">Développement Frontend</h3>
+                  <div class="skill-level" data-fr="Niveau : Avancé" data-en="Level: Advanced">Niveau : Avancé</div>
                   <div class="skill-block">
                     <ul>
                       <li>
@@ -209,8 +181,8 @@
 
               <div class="carousel-card">
                 <div class="skill-analysis">
-                  <h3>Développement Backend</h3>
-                  <div class="skill-level">Niveau : Intermédiaire+</div>
+                  <h3 data-fr="Développement Backend" data-en="Backend Development">Développement Backend</h3>
+                  <div class="skill-level" data-fr="Niveau : Intermédiaire+" data-en="Level: Intermediate+">Niveau : Intermédiaire+</div>
                   <div class="skill-block">
                     <ul>
                       <li>
@@ -244,8 +216,8 @@
 
               <div class="carousel-card">
                 <div class="skill-analysis">
-                  <h3>Data Science & Algorithmes</h3>
-                  <div class="skill-level">Niveau : Intermédiaire+</div>
+                  <h3 data-fr="Data Science &amp; Algorithmes" data-en="Data Science &amp; Algorithms">Data Science &amp; Algorithmes</h3>
+                  <div class="skill-level" data-fr="Niveau : Intermédiaire+" data-en="Level: Intermediate+">Niveau : Intermédiaire+</div>
                   <div class="skill-block">
                     <ul>
                       <li>
@@ -279,8 +251,8 @@
 
               <div class="carousel-card">
                 <div class="skill-analysis">
-                  <h3>Langages Système & Game Dev</h3>
-                  <div class="skill-level">Niveau : Intermédiaire</div>
+                  <h3 data-fr="Langages Système &amp; Game Dev" data-en="System Languages &amp; Game Dev">Langages Système &amp; Game Dev</h3>
+                  <div class="skill-level" data-fr="Niveau : Intermédiaire" data-en="Level: Intermediate">Niveau : Intermédiaire</div>
                   <div class="skill-block">
                     <ul>
                       <li>
@@ -314,8 +286,8 @@
 
               <div class="carousel-card">
                 <div class="skill-analysis">
-                  <h3>Outils & Méthodes</h3>
-                  <div class="skill-level">Niveau : Avancé</div>
+                  <h3 data-fr="Outils &amp; Méthodes" data-en="Tools &amp; Methods">Outils &amp; Méthodes</h3>
+                  <div class="skill-level" data-fr="Niveau : Avancé" data-en="Level: Advanced">Niveau : Avancé</div>
                   <div class="skill-block">
                     <ul>
                       <li>
@@ -364,7 +336,7 @@
 
     <section id="last-projects">
       <div class="container">
-        <h2>Mes Projets</h2>
+        <h2 data-fr="Mes Projets" data-en="My Projects">Mes Projets</h2>
 
         <div class="carousel-container" id="projects-carousel">
           <button class="carousel-arrow carousel-arrow-prev" aria-label="Précédent">&#8249;</button>
@@ -379,8 +351,10 @@
                     onerror="this.style.cssText='background:#1A1A1A;min-height:200px;display:block';this.removeAttribute('src')"
                   />
                   <div class="project-content">
-                    <h3>VOLT — Langage de programmation</h3>
-                    <p class="project-description">
+                    <h3 data-fr="VOLT — Langage de programmation" data-en="VOLT — Programming Language">VOLT — Langage de programmation</h3>
+                    <p class="project-description"
+                       data-fr="Langage de scripting custom construit entièrement en Rust. Comprend un lexer, un parser, un compilateur bytecode et une machine virtuelle. Supporte les pipelines de données, les fonctions, les variables typées. Inclut un web playground interactif pour tester le langage en ligne."
+                       data-en="Custom scripting language built entirely in Rust. Includes a lexer, parser, bytecode compiler, and virtual machine. Supports data pipelines, functions, and typed variables. Includes an interactive web playground to test the language online.">
                       Langage de scripting custom construit entièrement en Rust. Comprend un
                       lexer, un parser, un compilateur bytecode et une machine virtuelle.
                       Supporte les pipelines de données, les fonctions, les variables typées.
@@ -396,15 +370,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/volt" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/volt/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -421,8 +391,12 @@
                     onerror="this.style.cssText='background:#1A1A1A;min-height:200px;display:block';this.removeAttribute('src')"
                   />
                   <div class="project-content">
-                    <h3>Optimisation 5G — 5<sup>e</sup> national</h3>
-                    <p class="project-description">
+                    <h3 data-i18n="html"
+                        data-fr="Optimisation 5G — 5<sup>e</sup> national"
+                        data-en="5G Optimization — 5<sup>th</sup> national">Optimisation 5G — 5<sup>e</sup> national</h3>
+                    <p class="project-description" data-i18n="html"
+                       data-fr="Algorithmes d'optimisation pour le placement d'antennes 5G développés pour une compétition EPITECH. Implémentation de recuit simulé, algorithmes génétiques et autres métaheuristiques. Tests sur plusieurs jeux de données. Résultat : <strong>5e place nationale</strong>."
+                       data-en="Optimization algorithms for 5G antenna placement, developed for an EPITECH competition. Simulated annealing, genetic algorithms, and other metaheuristics. Tested on multiple datasets. Result: <strong>5th place nationally</strong>.">
                       Algorithmes d'optimisation pour le placement d'antennes 5G développés
                       pour une compétition EPITECH. Implémentation de recuit simulé,
                       algorithmes génétiques et autres métaheuristiques. Tests sur plusieurs
@@ -439,15 +413,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/5g-optimization" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/5g-optimization/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -464,8 +434,10 @@
                     onerror="this.style.cssText='background:#1A1A1A;min-height:200px;display:block';this.removeAttribute('src')"
                   />
                   <div class="project-content">
-                    <h3>PrankGuard — Sécurité Windows</h3>
-                    <p class="project-description">
+                    <h3 data-fr="PrankGuard — Sécurité Windows" data-en="PrankGuard — Windows Security">PrankGuard — Sécurité Windows</h3>
+                    <p class="project-description"
+                       data-fr="Application de sécurité Windows avec reconnaissance faciale (OpenCV), gestion des périphériques USB, blocage réseau automatique. Détection d'intrusion en temps réel avec alertes. Interface utilisateur pour la configuration des règles de sécurité."
+                       data-en="Windows security application with facial recognition (OpenCV), USB device management, and automatic network blocking. Real-time intrusion detection with alerts. User interface for configuring security rules.">
                       Application de sécurité Windows avec reconnaissance faciale (OpenCV),
                       gestion des périphériques USB, blocage réseau automatique. Détection
                       d'intrusion en temps réel avec alertes. Interface utilisateur pour la
@@ -482,15 +454,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/prankguard" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/prankguard/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -508,7 +476,9 @@
                   />
                   <div class="project-content">
                     <h3>Fist of Steel: Marvin's Vengeance</h3>
-                    <p class="project-description">
+                    <p class="project-description"
+                       data-fr="Jeu 2D complet développé en équipe avec LibGDX. Système de sprites animés, intégration de cartes Tiled, intelligence artificielle des ennemis, gestion audio complète, système de score."
+                       data-en="Complete 2D game developed as a team with LibGDX. Animated sprite system, Tiled map integration, enemy AI, full audio management, scoring system.">
                       Jeu 2D complet développé en équipe avec LibGDX. Système de sprites
                       animés, intégration de cartes Tiled, intelligence artificielle des
                       ennemis, gestion audio complète, système de score.
@@ -524,15 +494,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/fist-of-steel" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/fist-of-steel/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -549,8 +515,10 @@
                     onerror="this.style.cssText='background:#1A1A1A;min-height:200px;display:block';this.removeAttribute('src')"
                   />
                   <div class="project-content">
-                    <h3>Job Board — Plateforme emploi</h3>
-                    <p class="project-description">
+                    <h3 data-fr="Job Board — Plateforme emploi" data-en="Job Board — Job Platform">Job Board — Plateforme emploi</h3>
+                    <p class="project-description"
+                       data-fr="Plateforme de recherche d'emploi complète avec authentification, publication d'offres, candidatures, messagerie en temps réel (WebSocket). API REST avec Node.js/Express, frontend React, base de données MySQL. CRUD complet avec gestion de rôles."
+                       data-en="Complete job search platform with authentication, job posting, applications, and real-time messaging (WebSocket). REST API with Node.js/Express, React frontend, MySQL database. Full CRUD with role management.">
                       Plateforme de recherche d'emploi complète avec authentification,
                       publication d'offres, candidatures, messagerie en temps réel
                       (WebSocket). API REST avec Node.js/Express, frontend React, base de
@@ -567,15 +535,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/job-board" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/job-board/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -592,8 +556,10 @@
                     onerror="this.style.cssText='background:#1A1A1A;min-height:200px;display:block';this.removeAttribute('src')"
                   />
                   <div class="project-content">
-                    <h3>Portfolio — Ce site</h3>
-                    <p class="project-description">
+                    <h3 data-fr="Portfolio — Ce site" data-en="Portfolio — This site">Portfolio — Ce site</h3>
+                    <p class="project-description"
+                       data-fr="Portfolio professionnel construit avec Next.js et déployé sur Vercel. Thème dark/rouge custom, carrousels interactifs, site bilingue FR/EN, formulaire de contact fonctionnel, responsive design. Déploiement continu via GitHub."
+                       data-en="Professional portfolio built with Next.js and deployed on Vercel. Custom dark/crimson theme, interactive carousels, bilingual FR/EN, functional contact form, responsive design. Continuous deployment via GitHub.">
                       Portfolio professionnel construit avec Next.js et déployé sur Vercel.
                       Thème dark/rouge custom, carrousels interactifs, site bilingue FR/EN,
                       formulaire de contact fonctionnel, responsive design. Déploiement
@@ -610,15 +576,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/portfolio/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -635,8 +597,10 @@
                     onerror="this.style.cssText='background:#1A1A1A;min-height:200px;display:block';this.removeAttribute('src')"
                   />
                   <div class="project-content">
-                    <h3>Site de recettes de cuisine</h3>
-                    <p class="project-description">
+                    <h3 data-fr="Site de recettes de cuisine" data-en="Cooking Recipe Website">Site de recettes de cuisine</h3>
+                    <p class="project-description"
+                       data-fr="Application web permettant de créer, partager et découvrir des recettes de cuisine. Authentification complète, CRUD, upload d'images, interface responsive. Premier projet full stack."
+                       data-en="Web application for creating, sharing, and discovering cooking recipes. Full authentication, CRUD, image upload, responsive interface. First full-stack project.">
                       Application web permettant de créer, partager et découvrir des recettes
                       de cuisine. Authentification complète, CRUD, upload d'images, interface
                       responsive. Premier projet full stack.
@@ -651,15 +615,11 @@
                     </div>
                     <div class="project-links">
                       <a href="https://github.com/alterax-code/recettes" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                       </a>
                       <a href="https://github.com/alterax-code/recettes/stargazers" target="_blank" rel="noopener noreferrer" class="project-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                         Stars
                       </a>
                     </div>
@@ -696,12 +656,12 @@
 
         <form class="contact-form">
           <div class="form-group">
-            <label for="lastname">Nom</label>
+            <label for="lastname" data-fr="Nom" data-en="Last name">Nom</label>
             <input type="text" id="lastname" name="lastname" required />
           </div>
 
           <div class="form-group">
-            <label for="firstname">Prénom</label>
+            <label for="firstname" data-fr="Prénom" data-en="First name">Prénom</label>
             <input type="text" id="firstname" name="firstname" required />
           </div>
 
@@ -711,7 +671,7 @@
           </div>
 
           <div class="form-group">
-            <label for="subject">Sujet</label>
+            <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
             <input type="text" id="subject" name="subject" required />
           </div>
 
@@ -720,13 +680,13 @@
             <textarea id="message" name="message" required></textarea>
           </div>
 
-          <button type="submit">Envoyer le message</button>
+          <button type="submit" data-fr="Envoyer le message" data-en="Send message">Envoyer le message</button>
         </form>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2026 Lucas Jacob — Tous droits réservés</p>
+      <p data-fr="&copy; 2026 Lucas Jacob — Tous droits réservés" data-en="&copy; 2026 Lucas Jacob — All rights reserved">&copy; 2026 Lucas Jacob — Tous droits réservés</p>
     </footer>
 
     <div id="cvModal" class="modal">
@@ -742,19 +702,12 @@
           download="CV_Jacob_Lucas.pdf"
           class="modal-download-btn"
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
-          Télécharger
+          <span data-fr="Télécharger" data-en="Download">Télécharger</span>
         </a>
       </div>
     </div>

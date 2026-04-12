@@ -187,3 +187,34 @@ window.addEventListener("load", function () {
   initCarousel("skills-carousel");
   initCarousel("projects-carousel");
 });
+
+/* ===== I18N ===== */
+var currentLang = localStorage.getItem("lang") || "fr";
+
+function applyLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-fr]").forEach(function (el) {
+    var text = el.getAttribute("data-" + lang);
+    if (!text) return;
+    if (el.getAttribute("data-i18n") === "html") {
+      el.innerHTML = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+  var btn = document.getElementById("lang-toggle");
+  if (btn) btn.textContent = lang === "fr" ? "EN" : "FR";
+}
+
+var langToggleBtn = document.getElementById("lang-toggle");
+if (langToggleBtn) {
+  langToggleBtn.addEventListener("click", function () {
+    currentLang = currentLang === "fr" ? "en" : "fr";
+    localStorage.setItem("lang", currentLang);
+    applyLang(currentLang);
+  });
+}
+
+window.addEventListener("load", function () {
+  applyLang(currentLang);
+});
