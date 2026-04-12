@@ -62,20 +62,17 @@ const viewCvBtn = document.getElementById("viewCvBtn");
 const closeBtn = document.querySelector(".close-modal");
 
 viewCvBtn.addEventListener("click", function () {
-  console.log('Bouton "Voir CV" cliqué !');
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener("click", function () {
-  console.log("Bouton X cliqué !");
   modal.style.display = "none";
   document.body.style.overflow = "auto";
 });
 
 window.addEventListener("click", function (e) {
   if (e.target === modal) {
-    console.log("Clic en dehors de l'image !");
     modal.style.display = "none";
     document.body.style.overflow = "auto";
   }
@@ -83,7 +80,6 @@ window.addEventListener("click", function (e) {
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && modal.style.display === "block") {
-    console.log("Touche ECHAP pressée !");
     modal.style.display = "none";
     document.body.style.overflow = "auto";
   }
