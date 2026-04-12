@@ -188,6 +188,34 @@ window.addEventListener("load", function () {
   initCarousel("projects-carousel");
 });
 
+/* ===== CONTACT FORM ===== */
+var contactForm = document.getElementById("contact-form");
+var formSuccess = document.getElementById("form-success");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var data = new FormData(contactForm);
+    fetch(contactForm.action, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    })
+      .then(function (res) {
+        if (res.ok) {
+          contactForm.reset();
+          contactForm.style.display = "none";
+          if (formSuccess) {
+            var lang = localStorage.getItem("lang") || "fr";
+            var msg = formSuccess.getAttribute("data-" + lang);
+            if (msg) formSuccess.textContent = msg;
+            formSuccess.style.display = "block";
+          }
+        }
+      });
+  });
+}
+
 /* ===== I18N ===== */
 var currentLang = localStorage.getItem("lang") || "fr";
 
